@@ -1,0 +1,32 @@
+body{
+    margin: 0%;
+}
+
+.item1{
+    grid-area: navbar;
+    background-color: blue;
+}
+
+.item2{
+
+    grid-area: aside;
+    background-color: blueviolet;
+}
+
+.item3{
+
+    grid-area: main;
+    background-color: brown;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    padding: 2%;
+    gap: 1%;
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: 10vh 90vh;
+    grid-template-areas: 
+        "navbar navbar" 
+        "aside main";
+}
